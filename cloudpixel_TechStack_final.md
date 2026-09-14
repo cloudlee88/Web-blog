@@ -1,6 +1,6 @@
-# SMALLCORNER — Tech Stack & Agent Instructions — FINAL
+# CLOUDPIXEL — Tech Stack & Agent Instructions — FINAL
 
-> **Dành cho Claude Code:** Đây là nguồn tham chiếu kỹ thuật duy nhất cho dự án **smallcorner**. Đọc toàn bộ trước khi thay đổi code. Đặt bản rút gọn của file này tại `CLAUDE.md` ở gốc repo để tự động nạp làm ngữ cảnh. Kiểm tra quy ước cấu hình Claude Code mới nhất tại https://docs.claude.com/en/docs/claude-code/overview.
+> **Dành cho Claude Code:** Đây là nguồn tham chiếu kỹ thuật duy nhất cho dự án **cloudpixel**. Đọc toàn bộ trước khi thay đổi code. Đặt bản rút gọn của file này tại `CLAUDE.md` ở gốc repo để tự động nạp làm ngữ cảnh. Kiểm tra quy ước cấu hình Claude Code mới nhất tại https://docs.claude.com/en/docs/claude-code/overview.
 
 **Định vị:** Hybrid directory + review sâu, nội dung tiếng Anh, mô hình affiliate. DB-backed, API-writable (sẵn sàng tự động hóa nội dung đa kênh sau này).
 
@@ -14,7 +14,7 @@ Bản draft đầu dùng MDX-in-Git cho blog review. Sau khi chốt mô hình **
 
 ## 2. Cấu trúc Repository
 ```Plaintext
-smallcorner/
+cloudpixel/
 ├── src/
 │   ├── app/
 │   │   ├── (marketing)/          # Home, About, Contact, Disclosure

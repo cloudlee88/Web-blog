@@ -1,11 +1,11 @@
-# AINIMIX — Bản tóm tắt thay đổi (v2.0 → v2.1) cho Claude Code
+# CLOUDPIXEL — Bản tóm tắt thay đổi (v2.0 → v2.1) cho Claude Code
 
-> **Mục đích:** File này liệt kê các thay đổi so với bộ tài liệu cũ (**smallcorner v2.0**) để Claude Code nắm nhanh phần delta. Nguồn sự thật đầy đủ vẫn là 4 file: `ainimix_PRD_final.md`, `ainimix_PDR_final.md`, `ainimix_TechStack_final.md`, `ainimix_Implementation_Plan_final.md`. Nếu có mâu thuẫn ở đâu, **ưu tiên bản v2.1**.
+> **Mục đích:** File này liệt kê các thay đổi so với bộ tài liệu cũ (**cloudpixel v2.0**) để Claude Code nắm nhanh phần delta. Nguồn sự thật đầy đủ vẫn là 4 file: `cloudpixel_PRD_final.md`, `cloudpixel_PDR_final.md`, `cloudpixel_TechStack_final.md`, `cloudpixel_Implementation_Plan_final.md`. Nếu có mâu thuẫn ở đâu, **ưu tiên bản v2.1**.
 
 ---
 
 ## 0. TL;DR
-- **Đổi tên:** smallcorner → **Ainimix**
+- **Đổi tên:** cloudpixel → **CloudPixel**
 - **Chốt phạm vi:** focus **AI/Tech** (bỏ Entertainment/du lịch)
 - **Traffic:** cân bằng **SEO + social**
 - **Tính năng mới:** **Buying Guides**, **Verdict/Score box**, trang **How We Review**
@@ -14,11 +14,11 @@
 ---
 
 ## 1. Đổi tên thương hiệu
-- Mọi chỗ `smallcorner` / `Small Corner` → **Ainimix**.
-- Dòng disclosure: `"Affiliate link — Ainimix may earn a commission if you sign up through this link."`
-- Domain giả định: `ainimix.com` — ⚠️ **cần xác nhận domain + trademark còn trống trước khi hardcode**. Dùng biến `NEXT_PUBLIC_SITE_URL`, không hardcode domain rải rác.
-- Route affiliate: `ainimix.com/go/[slug]`.
-- Lưu ý: tên "Smallcorner" **chỉ còn có thể** xuất hiện như *nhãn của một mục Blog giọng cá nhân* (tùy chọn), KHÔNG phải tên site.
+- Mọi chỗ `cloudpixel` / `CloudPixel` → **CloudPixel**.
+- Dòng disclosure: `"Affiliate link — CloudPixel may earn a commission if you sign up through this link."`
+- Domain giả định: `cloudpixel.com` — ⚠️ **cần xác nhận domain + trademark còn trống trước khi hardcode**. Dùng biến `NEXT_PUBLIC_SITE_URL`, không hardcode domain rải rác.
+- Route affiliate: `cloudpixel.com/go/[slug]`.
+- Lưu ý: tên "Cloudlee Review" **chỉ còn có thể** xuất hiện như *nhãn của một mục Blog giọng cá nhân* (tùy chọn), KHÔNG phải tên site.
 
 ## 2. Phạm vi nội dung (Scope)
 - **Trước (đang cân nhắc):** mở rộng đa mảng kiểu The Verge — Tech / AI / Entertainment / du lịch / chill.
@@ -69,7 +69,7 @@
 - Mọi affiliate link **bắt buộc** qua `/go/[slug]` + **bắt buộc** có disclosure cạnh CTA.
 
 ## 8. Nếu đã lỡ scaffold theo v2.0 (checklist migrate)
-- [ ] Rename toàn bộ brand refs → Ainimix; dùng `NEXT_PUBLIC_SITE_URL`.
+- [ ] Rename toàn bộ brand refs → CloudPixel; dùng `NEXT_PUBLIC_SITE_URL`.
 - [ ] Thêm Prisma model `Guide` + tạo migration.
 - [ ] Thêm route `/best/[slug]` và `/methodology`.
 - [ ] Cập nhật nav header + footer (Best Guides, How We Review).
@@ -77,4 +77,4 @@
 - [ ] Áp accent color + display headers theo PDR mục 1 (bản sắc mới).
 
 ---
-**Nguồn đầy đủ (đặt trong `docs/`):** `ainimix_PRD_final.md` · `ainimix_PDR_final.md` · `ainimix_TechStack_final.md` · `ainimix_Implementation_Plan_final.md`.
+**Nguồn đầy đủ (đặt trong `docs/`):** `cloudpixel_PRD_final.md` · `cloudpixel_PDR_final.md` · `cloudpixel_TechStack_final.md` · `cloudpixel_Implementation_Plan_final.md`.

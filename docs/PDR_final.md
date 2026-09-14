@@ -1,4 +1,4 @@
-# SMALLCORNER — Product Design Requirement (PDR) — FINAL
+# CLOUDPIXEL — Product Design Requirement (PDR) — FINAL
 
 **Trạng thái:** Approved for build
 **Phiên bản:** 2.0
@@ -10,7 +10,7 @@
 ---
 
 ## 1. Tổng quan Thiết kế
-smallcorner là **hybrid**: giao diện dễ khám phá như một directory (card grid, category, tag, bảng xếp hạng — lấy cảm hứng từ bestainetwork.com) nhưng trang chi tiết là **review chuyên sâu**, không phải mô tả 2 dòng. Thiết kế cần truyền tải:
+cloudpixel là **hybrid**: giao diện dễ khám phá như một directory (card grid, category, tag, bảng xếp hạng — lấy cảm hứng từ bestainetwork.com) nhưng trang chi tiết là **review chuyên sâu**, không phải mô tả 2 dòng. Thiết kế cần truyền tải:
 - **Đáng tin & minh bạch** — yếu tố sống còn với affiliate và audience tiếng Anh.
 - **Chọn lọc, không rối** — khác cảm giác "biển tool" của directory lớn; ít nhưng chất.
 - **Dễ duyệt, dễ quyết** — người đọc tìm nhanh, đọc sâu khi cần.
@@ -105,7 +105,7 @@ Từ trên xuống:
 
 ## 9. Thiết kế yếu tố Affiliate
 - CTA nổi bật nhưng không "giật gân bán hàng" (dùng accent brand, tránh đỏ sale).
-- Disclosure ("Affiliate link — smallcorner may earn a commission if you sign up through this link") đặt **ngay cạnh/dưới** CTA, không giấu ở footer.
+- Disclosure ("Affiliate link — cloudpixel may earn a commission if you sign up through this link") đặt **ngay cạnh/dưới** CTA, không giấu ở footer.
 - Badge "Tested/Verified" cho tool đã thực sự dùng → khác biệt với directory chỉ tổng hợp.
 - Coupon/deal (nếu có) hiển thị rõ để tăng lý do click.
 

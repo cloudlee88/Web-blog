@@ -1,4 +1,4 @@
-# SMALLCORNER — Kế hoạch Triển khai với Claude Code — FINAL
+# CLOUDPIXEL — Kế hoạch Triển khai với Claude Code — FINAL
 
 **Tài liệu đi kèm:** PRD_final, PDR_final, TechStack_final.
 **Định hướng đã chốt:** Hybrid directory + review sâu · tiếng Anh · Vercel · Next.js + Neon/Postgres + Prisma · ~30–50 tool lúc launch · ranking biên tập + trending (không tài khoản/upvote) · sẵn sàng tự động hóa đa kênh về sau.

@@ -1,14 +1,16 @@
-# CLAUDE.md — Ainimix
+# CLAUDE.md — CloudPixel
 
 > Condensed context for Claude Code. Full specs live in `docs/` — read
 > `docs/PRD_final.md`, `docs/PDR_final.md`, `docs/TechStack_final.md`, and the
-> **v2.1 delta** `docs/ainimix_CHANGES_v2.0_to_v2.1.md` (on conflict, v2.1 wins)
+> **v2.1 delta** `docs/cloudpixel_CHANGES_v2.0_to_v2.1.md` (on conflict, v2.1 wins)
 > before adding features.
 
 ## What this is
 
-**Ainimix** (formerly "smallcorner") — a hybrid **directory + deep-review +
-buying-guide** site for AI tools, software and digital products. Content is
+**CloudPixel** (published brand; project/repo codename **Cloudhub**; formerly
+"smallcorner" / "Ainimix") — a hybrid **directory + deep-review +
+buying-guide** site for AI tools, software and digital products. The
+personal-voice blog section is branded **Cloudlee Review**. Content is
 **English**, business model is **affiliate**. Focus is **AI/Tech**. Positioning:
 fewer tools, deeper reviews (E-E-A-T), commercial buying guides ("Best AI X"),
 and a transparent review process — not a thousand-tool listing. DB-backed and

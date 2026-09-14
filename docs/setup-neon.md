@@ -1,6 +1,6 @@
 # Kết nối Neon & nạp dữ liệu (local)
 
-Mục tiêu: cắm database Neon (Postgres, free) vào smallcorner để **7 category + 20 bài
+Mục tiêu: cắm database Neon (Postgres, free) vào cloudpixel để **7 category + 20 bài
 review** hiện lên tại `http://localhost:3000`.
 
 Toàn bộ mất ~10 phút.
@@ -10,7 +10,7 @@ Toàn bộ mất ~10 phút.
 ## 1. Tạo database trên Neon (miễn phí)
 
 1. Vào <https://neon.tech> → **Sign up** (đăng nhập bằng GitHub/Google cho nhanh).
-2. **Create project** → đặt tên (vd `smallcorner`), region gần bạn (vd Singapore).
+2. **Create project** → đặt tên (vd `cloudpixel`), region gần bạn (vd Singapore).
 3. Sau khi tạo, Neon hiện ô **Connection string** — bấm **Copy**.
    - 💡 **Mẹo cho bước local:** trong ô đó, **tắt** tuỳ chọn *"Connection pooling"*
      (lấy chuỗi *direct*). Chuỗi direct chạy `prisma migrate` mượt hơn.

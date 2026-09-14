@@ -42,11 +42,11 @@ Wrap-up + a nudge to read the full reviews.`,
 | `"tech"` | **Tech** | Phần mềm, app, năng suất |
 | `"digital-products"` | **Digital Products** | Khóa học, template, marketplace |
 | `"buying-guides"` | **Best Guides** | Bài "The Best AI X" (best-of) |
-| *(bỏ trống)* | **Smallcorner** | So sánh, tutorial, review sản phẩm |
+| *(bỏ trống)* | **Cloudlee Review** | So sánh, tutorial, review sản phẩm |
 
 > Muốn thêm bài **cho page AI** → đặt `categorySlug: "ai"`.
 
-### `type` → tab trong Smallcorner (và nhãn thẻ)
+### `type` → tab trong Cloudlee Review (và nhãn thẻ)
 `BLOG` → Blog · `TUTORIAL` → Tutorials · `NEWS` → News · `REVIEW` → Reviews (kèm `topic`).
 
 ---

@@ -1,4 +1,4 @@
-# SMALLCORNER — Product Requirements Document (PRD) — FINAL
+# CLOUDPIXEL — Product Requirements Document (PRD) — FINAL
 
 **Trạng thái:** Approved for build
 **Phiên bản:** 2.0 (cập nhật theo mô hình hybrid directory sau khi phân tích bestainetwork.com)
@@ -15,11 +15,11 @@
 
 **Vấn đề:**
 - **Với người đọc:** Các directory AI lớn (There's An AI For That, Futurepedia, BestAI Network...) liệt kê hàng nghìn tool nhưng mỗi tool chỉ có 2–3 dòng mô tả + screenshot — **rộng nhưng nông**. Người đọc vẫn phải tự đi research sâu ở nơi khác trước khi quyết định.
-- **Với chủ site:** Cần một kênh có thương hiệu (Small Corner) vừa chia sẻ chọn lọc, vừa tạo thu nhập affiliate — và có khả năng mở rộng bằng tự động hóa nội dung về sau.
+- **Với chủ site:** Cần một kênh có thương hiệu (CloudPixel) vừa chia sẻ chọn lọc, vừa tạo thu nhập affiliate — và có khả năng mở rộng bằng tự động hóa nội dung về sau.
 
-**Mục tiêu:** Xây dựng smallcorner — kết hợp **cấu trúc dễ khám phá của directory** với **chiều sâu của review** — để trở thành nơi người đọc tin tưởng khi chọn công cụ, đồng thời chuyển đổi traffic thành thu nhập affiliate.
+**Mục tiêu:** Xây dựng cloudpixel — kết hợp **cấu trúc dễ khám phá của directory** với **chiều sâu của review** — để trở thành nơi người đọc tin tưởng khi chọn công cụ, đồng thời chuyển đổi traffic thành thu nhập affiliate.
 
-**Khác biệt cốt lõi (vì sao chọn hybrid):** BestAI thắng ở *độ phủ* (2777 tool). smallcorner không đua độ phủ (bất khả thi khi làm một mình + tiếng Anh cạnh tranh cực gắt), mà thắng ở *chiều sâu và độ chọn lọc*: ít tool hơn nhưng mỗi tool có review thật, pros/cons, use-case, so sánh — thứ mà các directory thuần không có. Đây vừa là định vị marketing, vừa là yếu tố E-E-A-T giúp SEO trong thị trường tiếng Anh.
+**Khác biệt cốt lõi (vì sao chọn hybrid):** BestAI thắng ở *độ phủ* (2777 tool). cloudpixel không đua độ phủ (bất khả thi khi làm một mình + tiếng Anh cạnh tranh cực gắt), mà thắng ở *chiều sâu và độ chọn lọc*: ít tool hơn nhưng mỗi tool có review thật, pros/cons, use-case, so sánh — thứ mà các directory thuần không có. Đây vừa là định vị marketing, vừa là yếu tố E-E-A-T giúp SEO trong thị trường tiếng Anh.
 
 ### 1.2 Giá trị mang lại
 
