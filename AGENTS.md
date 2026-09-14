@@ -7,10 +7,9 @@
 
 ## What this is
 
-**CloudPixel** (published brand; project/repo codename **Cloudhub**; formerly
-"smallcorner" / "Ainimix") — a hybrid **directory + deep-review +
-buying-guide** site for AI tools, software and digital products. The
-personal-voice blog section is branded **Cloudlee Review**. Content is
+**CloudPixel** (project/repo codename **Cloudhub**) — a hybrid **directory +
+deep-review + buying-guide** site for AI tools, software and digital products.
+The personal-voice blog section is branded **Cloudlee Review**. Content is
 **English**, business model is **affiliate**. Focus is **AI/Tech**. Positioning:
 fewer tools, deeper reviews (E-E-A-T), commercial buying guides ("Best AI X"),
 and a transparent review process — not a thousand-tool listing. DB-backed and
