@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Palette per ui-design-prompt-trackit.md ("Trackit" enterprise SaaS style):
+       white base, navy for solid CTAs / dark surfaces, blue as the accent. */
+    --background: 0 0% 100%; /* Layer 1 — white content/cards */
+    --foreground: 224 45% 8%; /* heading near-black navy #0B0E1A */
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 45% 8%;
+
+    --muted: 220 20% 98%; /* Layer 2 — very light cool grey #F8F9FB */
+    --muted-foreground: 222 13% 46%; /* body grey #667085 */
+
+    --border: 220 16% 91%; /* divider #E4E7EC */
+    --input: 220 16% 88%;
+
+    /* Primary accent — deep royal blue #1D4ED8 (links, icons, focus, blue CTAs) */
+    --primary: 224 76% 48%;
+    --primary-foreground: 0 0% 100%;
+    /* Hover / active — darker blue #1E3A8A */
+    --brand-2: 224 64% 33%;
+
+    /* Navy — near-black, solid signature CTAs, dark surfaces, logo (#0B1220) */
+    --navy: 220 49% 8%;
+    --navy-foreground: 0 0% 100%;
+
+    --secondary: 220 20% 96%;
+    --secondary-foreground: 222 44% 15%;
+
+    --accent: 216 88% 89%; /* light blue #CFE0FB (hovers/chips/icon bg) */
+    --accent-foreground: 224 72% 40%;
+
+    --destructive: 0 72% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Growth / positive — green #12B76A */
+    --success: 152 82% 39%;
+    /* Rating stars — gold #FBBF24 */
+    --gold: 45 93% 56%;
+    --gold-foreground: 30 45% 14%;
+
+    --ring: 224 76% 48%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 222 44% 6%;
+    --foreground: 210 40% 96%;
+    --card: 222 40% 9%;
+    --card-foreground: 210 40% 96%;
+    --muted: 222 30% 14%;
+    --muted-foreground: 217 15% 65%;
+    --border: 222 25% 20%;
+    --input: 222 25% 22%;
+    --primary: 222 83% 62%;
+    --primary-foreground: 222 44% 8%;
+    --brand-2: 224 70% 55%;
+    --navy: 222 40% 9%;
+    --navy-foreground: 210 40% 96%;
+    --secondary: 222 25% 18%;
+    --secondary-foreground: 210 40% 92%;
+    --accent: 222 45% 20%;
+    --accent-foreground: 213 94% 82%;
+    --destructive: 0 62% 48%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 152 60% 45%;
+    --gold: 38 92% 55%;
+    --gold-foreground: 30 45% 14%;
+    --ring: 222 83% 62%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+
+  ::selection {
+    @apply bg-primary/20;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Review / article prose (hand-rolled, no typography plugin needed)  */
+/* ------------------------------------------------------------------ */
+@layer components {
+  .prose-review {
+    @apply text-[1.05rem] leading-relaxed text-foreground/90;
+  }
+  .prose-review > * + * {
+    @apply mt-5;
+  }
+  .prose-review h2 {
+    @apply mt-10 scroll-mt-24 font-heading text-2xl font-bold tracking-tight text-foreground;
+  }
+  .prose-review h3 {
+    @apply mt-8 scroll-mt-24 font-heading text-xl font-semibold text-foreground;
+  }
+  .prose-review p {
+    @apply leading-7;
+  }
+  .prose-review a {
+    @apply font-medium text-primary underline underline-offset-4 hover:text-primary/80;
+  }
+  .prose-review ul {
+    @apply list-disc space-y-2 pl-6;
+  }
+  .prose-review ol {
+    @apply list-decimal space-y-2 pl-6;
+  }
+  .prose-review blockquote {
+    @apply border-l-4 border-primary/40 pl-4 italic text-muted-foreground;
+  }
+  .prose-review code {
+    @apply rounded bg-muted px-1.5 py-0.5 font-mono text-[0.9em];
+  }
+  .prose-review pre {
+    @apply overflow-x-auto rounded-lg bg-foreground/95 p-4 text-sm text-background;
+  }
+  .prose-review pre code {
+    @apply bg-transparent p-0 text-inherit;
+  }
+  .prose-review img {
+    @apply rounded-lg border border-border;
+  }
+
+  /* Trackit hero band — light-blue radial glow + subtle dot grid on white
+     (#EAF1FB → #F7F9FC → white, dots rgba(59,130,246,.12)) */
+  .hero-band {
+    background-color: #ffffff;
+    background-image:
+      radial-gradient(44% 50% at 0% 0%, rgba(37, 84, 232, 0.16) 0%, transparent 62%),
+      radial-gradient(44% 54% at 100% 0%, rgba(37, 84, 232, 0.17) 0%, transparent 62%);
+    background-repeat: no-repeat, no-repeat;
+  }
+  .dark .hero-band {
+    background-color: hsl(222 44% 6%);
+    background-image:
+      radial-gradient(44% 50% at 0% 0%, rgba(59, 130, 246, 0.18) 0%, transparent 62%),
+      radial-gradient(44% 54% at 100% 0%, rgba(59, 130, 246, 0.18) 0%, transparent 62%);
+    background-repeat: no-repeat, no-repeat;
+  }
+  /* Solid navy for the signature primary CTA buttons (Trackit §3 — navy, not pill) */
+  .cta-gradient {
+    background-color: hsl(var(--navy));
+  }
+  .cta-gradient:hover {
+    background-color: hsl(222 44% 16%);
+  }
+  /* Light-blue rounded section container (ref: "Benefits" panel) */
+  .section-panel {
+    @apply rounded-3xl border border-border/60 bg-accent/40 p-8 sm:p-12;
+  }
+  /* Light-blue CTA banner (prompt §9 — gradient xanh dương nhạt, dark text) */
+  .cta-banner {
+    background-image: linear-gradient(135deg, #dce8fb 0%, #b9d2f8 100%);
+    border: 1px solid #9dc0f5;
+  }
+  .dark .cta-banner {
+    background-image: linear-gradient(135deg, hsl(222 44% 12%) 0%, hsl(222 44% 9%) 100%);
+    border-color: hsl(222 25% 22%);
+  }
+  /* Colored rounded-square icon chip (ref: marketplace / step / benefit icons) */
+  .icon-chip {
+    @apply flex size-11 items-center justify-center rounded-xl text-white shadow-sm;
+  }
+  /* Soft navy card shadow (Trackit — rgba(16,24,40,.06), wide + diffuse) */
+  .shadow-card {
+    box-shadow: 0 16px 40px -20px rgba(16, 24, 40, 0.16);
+  }
+  /* Oversized display headings for section titles */
+  .display-title {
+    @apply font-heading font-bold tracking-tight;
+    letter-spacing: -0.02em;
+  }
+  .prose-review table {
+    @apply w-full border-collapse text-sm;
+  }
+  .prose-review th,
+  .prose-review td {
+    @apply border border-border px-3 py-2 text-left;
+  }
+  .prose-review th {
+    @apply bg-muted font-semibold;
+  }
+}

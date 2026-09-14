@@ -1,0 +1,16 @@
+import type { MetadataRoute } from "next";
+import { SITE } from "@/lib/constants";
+
+/** robots.txt (FR-7.2). Keeps crawlers out of admin, api and cloaked links. */
+export default function robots(): MetadataRoute.Robots {
+  const base = SITE.url.replace(/\/$/, "");
+  return {
+    rules: {
+      userAgent: "*",
+      allow: "/",
+      disallow: ["/admin", "/api/", "/go/", "/search"],
+    },
+    sitemap: `${base}/sitemap.xml`,
+    host: base,
+  };
+}
